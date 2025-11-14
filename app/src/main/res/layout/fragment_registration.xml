@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.auth.fragments.registration.RegistrationFragment"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp"
+    android:weightSum="4">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:src="@drawable/splash_icon"
+        android:layout_weight="1"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/full_name"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:hint="@string/enter_your_full_name"
+            android:layout_marginTop="8dp"
+            style="@style/OutlinedEditText"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/darkGray"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_full_name"
+                style="@style/InputText"
+                android:inputType="textPersonName"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/mobile_number"
+            android:layout_marginTop="24dp"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:hint="@string/enter_your_mobile"
+            android:layout_marginTop="8dp"
+            style="@style/OutlinedEditText"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/darkGray"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_mobile"
+                style="@style/InputText"
+                android:inputType="phone"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/email"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:hint="@string/enter_your_email"
+            android:layout_marginTop="8dp"
+            style="@style/OutlinedEditText"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/darkGray"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_email"
+                style="@style/InputText"
+                android:inputType="textEmailAddress"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/password"
+            android:layout_marginTop="24dp"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:hint="@string/enter_your_password"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp"
+            style="@style/OutlinedEditText"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/darkGray"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_password"
+                style="@style/InputText"
+                android:inputType="textPersonName|textEmailAddress"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_back"
+            app:backgroundTint="@color/white"
+            android:text="@string/signup"
+            android:textColor="@color/navy"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_marginTop="24dp"
+            android:textSize="20sp"
+            android:padding="8dp"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
